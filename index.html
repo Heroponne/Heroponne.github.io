@@ -1,50 +1,155 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<link rel="icon" href="favicon.png">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<title>Google</title>
-</head>
-<body>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="https://kit.fontawesome.com/01b3f43a55.js" crossorigin="anonymous"></script>
+		<title>The Surfing Project</title>
+	</head>
 
-	<header>
-		<div id="perso">
-			<div class="gmail"><a href="https://accounts.google.com/ServiceLogin/signinchooser?flowName=GlifWebSignIn&flowEntry=ServiceLogin">Gmail</a></div>
-			<div class="gmail"><a href="https://www.google.fr/imghp?hl=fr&tab=wi&ogbl">Images</a></div>
-			<div id="logoapp"><a href="https://about.google/intl/fr/products/?tab=wh"><img src="logoapp.png"></a></div>
-			<div class="gmail"><a href="https://accounts.google.com/ServiceLogin/signinchooser?flowName=GlifWebSignIn&flowEntry=ServiceLogin"><button id="connexion">Connexion</button></a></div>
-		</div>
-	</header>
+	<body>
 
-	<div id="logo">
-		<img src="logogoogle.png" alt="Logo Google">
-	</div>
-	<div id="searchbar">
-		<input type="text" name="searching" size="60">
-	</div>
-	<div id="buttons">
-		<button class="luck">Recherche Google</button>
-		<button class="luck"><a href="https://www.google.com/doodles"> J'ai de la chance</a></button>
-	</div>
-	<footer id="bottom">
-		<div id="state">
-			<div class="state">France</div>
+		<header>
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			  	<a class="navbar-brand" href="#">The Surfing Project</a>
+			  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+			   		<span class="navbar-toggler-icon"></span>
+			  	</button>
+			 	<div class="collapse navbar-collapse" id="navbarNavDropdown">
+			    	<ul class="navbar-nav">
+			     		<li class="nav-item active">
+			        		<a class="nav-link" href="#">Accueil <span class="sr-only">(current)</span></a>
+			      		</li>
+			     		<li class="nav-item">
+			        		<a class="nav-link" href="#">Le programme</a>
+			      		</li>
+			      		<li class="nav-item dropdown">
+			       			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Nos prochaines sessions</a>
+			        		<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+					          <a class="dropdown-item" href="#">Action</a>
+					          <a class="dropdown-item" href="#">Another action</a>
+					          <a class="dropdown-item" href="#">Something else here</a>
+			        	</div>
+			      		</li>
+			    	</ul>
+			  	</div>
+			</nav>
+		</header>
+
+		<section>
+
+<!-- Jumbotron -->
+
+		<div class="jumbotron">
+			<div class="container text-center text-white">
+  				<h1 class="display-4">Partez à l'aventure</h1>
+  				<p class="lead">Découvrez notre école de surf en peer-learning</p>
+  				<div class="container">
+  					<a class="btn btn-primary btn-lg" href="#" role="button">Je m'inscris à la prochaine session</a>
+  					<a class="btn btn-secondary btn-lg" href="#" role="button">Je découvre le programme</a>
+  				</div>
+  			</div>
 		</div>
-		<div id="neverclicked">
-			<div id="leftelement">
-				<div class="element1"><a href="https://ads.google.com/intl/fr_fr/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2m--ahpm-0000000016-0000000001&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Publicité</a></div>
-				<div class="element1"><a href="https://www.google.fr/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1#?modal_active=none">Entreprise</a></div>
-				<div class="element1"><a href="https://about.google/intl/fr_fr/?utm_source=google-FR&utm_medium=referral&utm_campaign=hp-footer&fg=1">À propos</a></div>
-				<div class="element1"><a href="https://www.google.com/search/howsearchworks/?fg=1">Comment fonctionne la recherche Google ?</a></div>
+
+<!-- Sections -->
+
+		<div class="container">
+
+			<!-- Résumé -->
+
+			<div class="row justify-content-center text-center display-4 m-5">The Surfing Project en 3 points</div>
+			<div class="card-deck">
+			  <div class="card border-0">
+				<i class="fas fa-money-bill-wave-alt fa-5x text-center"></i>
+			    <div class="card-body">
+			      <h5 class="card-title text-center">Pas chère</h5>
+			      <p class="card-text">Donec sed odio dui. Etiam sem malesuada magna mollis euismod. Nullam id dolor id nibh utricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+			    </div>
+			  </div>
+			  <div class="card border-0">
+			    <i class="fas fa-couch fa-5x text-center"></i>
+			    <div class="card-body">
+			      <h5 class="card-title text-center">Relax</h5>
+			      <p class="card-text">Donec sed odio dui. Etiam sem malesuada magna mollis euismod. Nullam id dolor id nibh utricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+			    </div>
+			  </div>
+			  <div class="card border-0">
+			    <i class="fas fa-users fa-5x text-center"></i>
+			    <div class="card-body">
+			      <h5 class="card-title text-center">La communauté</h5>
+			      <p class="card-text">Donec sed odio dui. Etiam sem malesuada magna mollis euismod. Nullam id dolor id nibh utricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+			    </div>
+			  </div>
 			</div>
-			<div id="rightelement">
-				<div class="element2"><a href="https://support.google.com/websearch?p=fr_consumer_info&hl=fr&fg=1">Info consommateurs</a></div>
-				<div class="element2"><a href="https://policies.google.com/privacy?fg=1"> Confidentialité</a></div>
-				<div class="element2"><a href="https://policies.google.com/terms?fg=1">Conditions</a></div>		
-				<div class="element2"><a href="https://www.google.fr/preferences?hl=fr"> Paramètres</a></div>
+
+			<!-- Témoignages -->
+
+			<div class="display-4 text-center m-5">Témoignages</div>
+			<div class="card-deck">
+			  <div class="card">
+			    <img src="surf1.jpg" class="card-img-top" alt="jeff">
+			    <div class="card-body">
+			      <p class="card-text">Surfing's not a sport, it's a way of life, it's no hobby. It's a way of looking at that wave and saying, "Hey bud, let's party !"</p>
+			      <p class="card-text"><small class="text-muted">Jeff, Avril 2019</small></p>
+			    </div>
+			  </div>
+			  <div class="card">
+			    <img src="surf2.jpg" class="card-img-top" alt="jeannette">
+			    <div class="card-body">
+			      <p class="card-text">Grâce à TSP je fais le tour du mondeavec mon van et fais du surf ! Si l'expérience était à refaire je le referais plein de fois.</p>
+			      <p class="card-text"><small class="text-muted">Jeannette, Décembre 2018</small></p>
+			    </div>
+			  </div>
 			</div>
+
+
+			<!-- Prix -->
+
+			<div class="display-4 text-center m-5">Prix</div>	
+			<div class="card-deck">
+			 <div class="card text-center">
+			  <div class="card-header">Semaine d'essai</div>
+			  <div class="card-body">
+			    <h5 class="card-title">0€</h5>
+			    <p class="card-text">Le kiff</p>
+			    <p class="card-text">À Bali</p>
+			    <p class="card-text">Pendant 1 semaine</p>
+			    <a href="#" class="btn btn-outline-primary btn-block">S'inscrire</a>
+			  </div>
+			</div>
+			 <div class="card text-center">
+			  <div class="card-header">Early Bird</div>
+			  <div class="card-body">
+			    <h5 class="card-title">15€</h5>
+			    <p class="card-text">Le kiff</p>
+			    <p class="card-text">À Bali</p>
+			    <p class="card-text">Pendant 12 semaine</p>
+			    <a href="#" class="btn btn-primary btn-block">S'inscrire</a>
+			  </div>
+			</div>
+			  <div class="card text-center">
+				  <div class="card-header">En trois fois</div>
+				  <div class="card-body">
+				    <h5 class="card-title">7€<span class="text-muted"> / mo</span></h5>
+				    <p class="card-text">Le kiff</p>
+			    	<p class="card-text">À Bali</p>
+			    	<p class="card-text">Pendant 12 semaine</p>
+				    <a href="#" class="btn btn-primary btn-block">S'inscrire</a>
+				  </div>
+				</div>
+			</div>	
+			
+
+<!-- Pied de page -->
+
+			<footer>
+				<div class="text-muted my-5">© Bootstrap, et The Surfing Project</div>
+			</footer>
 		</div>
-	</footer>
-</body>
+
+		</section>
+
+	</body>
 </html>
