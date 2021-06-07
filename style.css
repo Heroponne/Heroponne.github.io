@@ -1,7 +1,455 @@
-.jumbotron{
-	height: 500px;
-	background-image: url(surfingbeach.jpg);
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+body {
+	background-color: floralwhite;
+	font-family: 'Roboto', sans-serif;
+	color: #333333;
+	font-size: 16px;
+}
+
+h1 {
+	font-size: 42px;
+}
+
+h2 {
+	font-size: 25px;
+}
+
+header {
+	display: flex;
+	height: 100vh;
+	justify-content: space-around;
+}
+
+figure {
+	display: flex;
+	justify-content: center;
+}
+
+#preferences {
+	text-align: left;
+	margin: 30px auto;
+}
+
+/* timeline */
+
+.timeline {
+	position: relative;
+}
+
+.timeline::before {
+	content: "";
+	position: absolute;
+	height: 100%;
+	background-color: #333333;
+	z-index: -2;
+}
+
+.content {
+	margin-bottom: 2px;
+	border: 3px solid #333333;
+	border-radius: 10px;
+	background-color: #fdf7fd;
+}
+
+.cursus-header, .professional-header {
+	font-weight: bold;
+}
+
+.cursus-date {
+	border: 3px solid #333333;
+	padding: 2px 8px;
+	margin: 2px 0;
+	border-radius: 10px;
+	color: #80c3ff;
+	background-color: #e6f3ff;
+}
+
+.timepoint {
+	display: flex;
+	align-items: center;
+}
+
+.timeline ul li {
+	margin-bottom: 50px;
+	list-style-type: none;
+}
+
+.timeline ul li.project {
+	list-style-type: disc;
+	text-align: left;
+	margin-bottom: 5px;
+}
+
+/* professional */
+
+.professional-header {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+#professionnal-experience {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.professional-header>p {
+	margin: auto 20px;
+}
+
+.professional-header>img {
+	width: 5%;
+}
+
+#professionnal-experience ul li {
+	text-align: left;
+}
+
+#professionnal-experience ul {
+	margin-bottom: 30px;
+}
+
+#project {
+	text-align: left;
+}
+
+footer {
+	margin-top: 60px;
+}
+
+@media screen and (max-width: 472px) {
+	/* intro */
+
+	img.profile-pic {
+		width: 75%;
+	}
+	/* timeline */
+
+	.timeline::before {
+		width: 3px;
+		left: 49.7%;
+	}
+
+	li p {
+		text-align: left;
+		margin-top: 0;
+	}
+
+	.content {
+		padding: 10px;
+	}
+
+	.cursus-date {
+		padding: 2px 8px;
+	}
+
+	.timepoint {
+		flex-direction: column;
+	}
+
+	.cursus-date p {
+		margin-bottom: 0;
+	}
+
+	ul#cursusList, ul#skillsList {
+		padding: 0 30px;
+	}
+
+	.timeline ul li {
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+
+	.timeline ul li.project {
+		display: list-item;
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+
+	.point {
+		display: none;
+	}
+
+	.timeline-pic {
+		display: flex;
+		justify-content: center;
+	}
+
+	.timeline-pic>img {
+		width: 30%;
+	}
+
+	/* professionnal experience */
+
+	.professional-header>img {
+		width: 10%;
+	}
+
+	.professional-date {
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
+
+	#languages {
+		display: flex;
+		justify-content: center;
+	}
+
+	section {
+		margin-bottom: 40px;
+	}
+
+}
+
+@media screen and (max-width: 1000px) and (min-width: 472px) {
+
+	h1 {
+		font-size: 56px;
+	}
+
+	h2 {
+		font-size: 44px;
+	}
+
+	img.profile-pic {
+		max-width: 335px;
+	}
+
+	#profilePic {
+		height: 50%;
+	}
+
+	article {
+		margin: 3%;
+	}
+
+	/* timeline */
+
+	.timeline::before {
+		width: 3px;
+		left: 30%;
+	}
+
+	.timeline-pic {
+		display: flex;
+		margin-left: 15.5%;
+	}
+
+	ul#cursusList, ul#skillsList {
+		padding: 0 5%;
+	}
+
+	.timeline-pic>img {
+		width: 30%;
+	}
+
+	.cursus-date {
+		padding: 0px 5px;
+		font-size: 18px;
+	}
+
+	.cursus-date>p {
+		margin: 5px;
+	}
+
+	.timepoint {
+		flex-direction: row;
+		align-self: flex-start;
+		width: 22.75%;
+	}
+
+	.point-div {
+		width: 11.25%;
+		display: flex;
+		justify-content: center;
+	}
+
+	.content {
+		width: 66%;
+	}
+
+	.point {
+		width: 20px;
+		height: 20px;
+		border-radius: 100%;
+		border: 3px solid #333333;
+		background-color: floralwhite;
+		margin: 0 10px;
+	}
+
+	.content>p {
+		padding: 4px;
+	}
+
+	.cursus-step {
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: flex-end;
+	}
+
+	/* professional */
+
+	canvas {
+		max-width: 75%;
+		margin: 20px auto;
+	}
+
+}
+
+@media screen and (max-width: 1000px) {
+	body {
+		box-shadow: 1px 1px 12px grey;
+		margin: 2%;
+		padding: 4%;
+	}
+
+	header {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	#identity {
+		order: -1;
+	}
+
+	h1, h2, p, h3 {
+		text-align: center;
+	}
+
+	img.profile-pic {
+		border-radius: 170px;
+		border: 8px solid #cce7ff;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	body {
+		margin: 5%;
+	}
+
+	header {
+		display: block;
+		padding-top: 15vh;
+		height: 80vh;
+	}
+
+	#summary>p, #skillsArticle>p {
+		line-height: 2em;
+	}
+
+	#skillsArticle>p {
+		margin-top: 40px;
+	}
+
+	article, header, h3 {
+		text-align: center;
+	}
+
+	#skillsList {
+		text-align: left;
+		margin-left: 10%;
+	}
+
+	#skillsList>li {
+		margin-top: 10px;
+	}
+
+	h3 {
+		margin: 50px 0;
+		font-size: 25px;
+	}
+
+	#profilePic {
+		float: left;
+		width: 30%;
+		margin-left: 100px;
+		box-shadow: 10px 10px 12px grey;
+	}
+
+	#identity, #job {
+		float: right;
+		width: 50%;
+		margin-top: 10vh;
+	}
+
+	.profile-pic {
+		width: 100%;
+	}
+
+	/* timeline */
+
+	.timeline::before {
+		width: 3px;
+		left: 50%;
+	}
+
+	#cursusList {
+		padding-left: 0;
+	}
+
+	.timeline-pic {
+		display: flex;
+		justify-content: left;
+	}
+
+	.timeline-pic>img {
+		width: 15%;
+		margin-left: 42.5%;
+	}
+
+	.point {
+		width: 20px;
+		height: 20px;
+		border-radius: 100%;
+		border: 3px solid #333333;
+		background-color: floralwhite;
+		margin: 0 auto;
+	}
+
+	.cursus-step {
+		display: flex;
+		align-items: flex-start;
+	}
+
+	.odd {
+		flex-direction: row-reverse;
+		justify-content: center;
+		margin-left: 38.7%;
+	}
+
+	.even {
+		flex-direction: row;
+		justify-content: center;
+		margin-right: 38.3%;
+	}
+
+	.content {
+		padding: 10px 20px;
+		width: 75%;
+	}
+
+	.timepoint {
+		width: 15%;
+	}
+
+	.point-div {
+		width: 10%;
+	}
+
+	.cursus-date {
+		width: 100%;
+	}
+
+	.canvas-div {
+		width: 50%;
+		margin-left: 25%;
+	}
+
+	/* professionnal */
+
+	.professional-header > img {
+		width: 35px;
+	}
+
 }

@@ -2,154 +2,199 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<!-- allows the website to detect it's being used on a device and prevents the user from zooming with fingers -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+		<script src="node_modules/chart.js/dist/Chart.js"></script>
+		<script defer src="style.js"></script>
 		<link rel="stylesheet" type="text/css" href="style.css">
-		<script src="https://kit.fontawesome.com/01b3f43a55.js" crossorigin="anonymous"></script>
-		<title>The Surfing Project</title>
+		<title>Florence Orgeret</title>
 	</head>
-
 	<body>
-
 		<header>
-			<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-			  	<a class="navbar-brand" href="#">The Surfing Project</a>
-			  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-			   		<span class="navbar-toggler-icon"></span>
-			  	</button>
-			 	<div class="collapse navbar-collapse" id="navbarNavDropdown">
-			    	<ul class="navbar-nav">
-			     		<li class="nav-item active">
-			        		<a class="nav-link" href="#">Accueil <span class="sr-only">(current)</span></a>
-			      		</li>
-			     		<li class="nav-item">
-			        		<a class="nav-link" href="#">Le programme</a>
-			      		</li>
-			      		<li class="nav-item dropdown">
-			       			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Nos prochaines sessions</a>
-			        		<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-					          <a class="dropdown-item" href="#">Action</a>
-					          <a class="dropdown-item" href="#">Another action</a>
-					          <a class="dropdown-item" href="#">Something else here</a>
-			        	</div>
-			      		</li>
-			    	</ul>
-			  	</div>
-			</nav>
+			<figure id="profilePic">
+				<img class="profile-pic" src="img/squaredProfilPic2.jpg" alt="Photo de profil">
+			</figure>
+			<h1 id="identity">Florence Orgeret</h1>
+			<h2 id="job">Développeuse Web et Web Mobile</h2>
 		</header>
-
 		<section>
-
-<!-- Jumbotron -->
-
-		<div class="jumbotron">
-			<div class="container text-center text-white">
-  				<h1 class="display-4">Partez à l'aventure</h1>
-  				<p class="lead">Découvrez notre école de surf en peer-learning</p>
-  				<div class="container">
-  					<a class="btn btn-primary btn-lg" href="#" role="button">Je m'inscris à la prochaine session</a>
-  					<a class="btn btn-secondary btn-lg" href="#" role="button">Je découvre le programme</a>
-  				</div>
-  			</div>
-		</div>
-
-<!-- Sections -->
-
-		<div class="container">
-
-			<!-- Résumé -->
-
-			<div class="row justify-content-center text-center display-4 m-5">The Surfing Project en 3 points</div>
-			<div class="card-deck">
-			  <div class="card border-0">
-				<i class="fas fa-money-bill-wave-alt fa-5x text-center"></i>
-			    <div class="card-body">
-			      <h5 class="card-title text-center">Pas chère</h5>
-			      <p class="card-text">Donec sed odio dui. Etiam sem malesuada magna mollis euismod. Nullam id dolor id nibh utricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-			    </div>
-			  </div>
-			  <div class="card border-0">
-			    <i class="fas fa-couch fa-5x text-center"></i>
-			    <div class="card-body">
-			      <h5 class="card-title text-center">Relax</h5>
-			      <p class="card-text">Donec sed odio dui. Etiam sem malesuada magna mollis euismod. Nullam id dolor id nibh utricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-			    </div>
-			  </div>
-			  <div class="card border-0">
-			    <i class="fas fa-users fa-5x text-center"></i>
-			    <div class="card-body">
-			      <h5 class="card-title text-center">La communauté</h5>
-			      <p class="card-text">Donec sed odio dui. Etiam sem malesuada magna mollis euismod. Nullam id dolor id nibh utricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-			    </div>
-			  </div>
-			</div>
-
-			<!-- Témoignages -->
-
-			<div class="display-4 text-center m-5">Témoignages</div>
-			<div class="card-deck">
-			  <div class="card">
-			    <img src="surf1.jpg" class="card-img-top" alt="jeff">
-			    <div class="card-body">
-			      <p class="card-text">Surfing's not a sport, it's a way of life, it's no hobby. It's a way of looking at that wave and saying, "Hey bud, let's party !"</p>
-			      <p class="card-text"><small class="text-muted">Jeff, Avril 2019</small></p>
-			    </div>
-			  </div>
-			  <div class="card">
-			    <img src="surf2.jpg" class="card-img-top" alt="jeannette">
-			    <div class="card-body">
-			      <p class="card-text">Grâce à TSP je fais le tour du mondeavec mon van et fais du surf ! Si l'expérience était à refaire je le referais plein de fois.</p>
-			      <p class="card-text"><small class="text-muted">Jeannette, Décembre 2018</small></p>
-			    </div>
-			  </div>
-			</div>
-
-
-			<!-- Prix -->
-
-			<div class="display-4 text-center m-5">Prix</div>	
-			<div class="card-deck">
-			 <div class="card text-center">
-			  <div class="card-header">Semaine d'essai</div>
-			  <div class="card-body">
-			    <h5 class="card-title">0€</h5>
-			    <p class="card-text">Le kiff</p>
-			    <p class="card-text">À Bali</p>
-			    <p class="card-text">Pendant 1 semaine</p>
-			    <a href="#" class="btn btn-outline-primary btn-block">S'inscrire</a>
-			  </div>
-			</div>
-			 <div class="card text-center">
-			  <div class="card-header">Early Bird</div>
-			  <div class="card-body">
-			    <h5 class="card-title">15€</h5>
-			    <p class="card-text">Le kiff</p>
-			    <p class="card-text">À Bali</p>
-			    <p class="card-text">Pendant 12 semaine</p>
-			    <a href="#" class="btn btn-primary btn-block">S'inscrire</a>
-			  </div>
-			</div>
-			  <div class="card text-center">
-				  <div class="card-header">En trois fois</div>
-				  <div class="card-body">
-				    <h5 class="card-title">7€<span class="text-muted"> / mo</span></h5>
-				    <p class="card-text">Le kiff</p>
-			    	<p class="card-text">À Bali</p>
-			    	<p class="card-text">Pendant 12 semaine</p>
-				    <a href="#" class="btn btn-primary btn-block">S'inscrire</a>
-				  </div>
+			<article id="summary">
+				<p>Après des études en odontologie et une carrière de chirurgien-dentiste, je souhaite découvrir le monde de la programmation. Ce projet me tient à coeur depuis maintenant plusieurs années, alors il est temps de concrétiser ce rêve ! <br>Pour m'exercer en HTML et CSS, j'ai écrit ce CV en ligne qui n'utilise que ces technologies (sauf pour le graphique en bas de page, qui a été conçu grâce à Chart.js (voir le site <a href="https://www.chartjs.org/">ici</a>). <br>Bonne lecture !</p>
+			</article>
+			<article id="skillsArticle">
+				<h3>Compétences</h3>
+				<ul id="skillsList">
+					<li>Programmer dans un langage informatique spécifique (Java, Ruby, Python, Php, Javascript, HTML, CSS, SQL)</li>
+					<li>Développer une application en lien avec une base de données</li>
+					<li>Analyser des problèmes techniques</li>
+					<li>Déterminer des mesures correctives</li>
+				</ul>
+        <p id="preferences">
+          Après diverses formations, j'ai développé une affinité plus particulière pour Php. <br>Ruby et Python sont des langages que j'ai également bien appréciés, mais je n'ai pas eu l'occasion de les mettre en pratique récemment. <br>Quant à Javascript, c'est un langage qui m'intéresse beaucoup mais que j'ai peu manipulé. Je profite d'un projet personnel de blind-test musical pour le mettre en pratique, tout en passant par le framework Vue.js !
+        </p>
+			</article>
+			<article id="cursus">
+				<h3>Formation</h3>
+				<div class="timeline">
+					<ul id="cursusList">
+						<li>
+							<div class="timeline-pic">
+								<img src="img/girl.png" alt="Icône de femme travaillant sur un ordinateur">
+							</div>
+						</li>
+						<li class="cursus-step odd">
+							<div class="content">
+								<p class="cursus-header">ENI - Titre de Développeur Web et Web Mobile</p>
+								<p>Formation à distance</p>
+								<p>Langages Java, PHP, SQL, Javascript, HTML, CSS, Framework Symfony</p>
+                <p>Projets :</p>
+                <ul class="project-list">
+                  <li class="project">Application web d'enchères façon eBay en JavaEE</li>
+                  <li class="project">Application web de propositions de sorties Php et Symfony</li>
+                  <li class="project">Application web de blind-test musical en Php, Symfony et découverte de Vue.js</li>
+                </ul>
+							</div>
+							<div class="point-div">
+								<div class="point"></div>
+							</div>
+							<div class="timepoint">
+								<div class="cursus-date">
+									<p>2020 - 2021</p>
+								</div>
+							</div>
+						</li>
+						<li class="cursus-step even">
+							<div class="content">
+								<p class="cursus-header">PCAP - Programming Essentials in Python</p>
+								<p>Formation à distance</p>
+								<p>Certificat de compétence dans le langage Python</p>
+								<p>Langage Python</p>
+							</div>
+							<div class="point-div">
+								<div class="point"></div>
+							</div>
+							<div class="timepoint">
+								<div class="cursus-date">
+									<p>2020</p>
+								</div>
+							</div>
+						</li>
+						<li class="cursus-step odd">
+							<div class="content">
+								<p class="cursus-header">The Hacking Project</p>
+								<p>Formation à distance</p>
+								<p>Complétion de formation au grade Corsaire</p>
+								<p>Langages Ruby, Javascript, HTML, CSS, Frameworks Ruby On Rails, Bootstrap</p>
+                <p>Projets :</p>
+                <ul class="project-list">
+                  <li class="project">Application web de boutique en ligne en Ruby et Ruby on Rails</li>
+                  <li class="project">Application web pour trouver des points de compost à proximité en Ruby et Ruby on Rails</li>
+                </ul>
+							</div>
+							<div class="point-div">
+								<div class="point"></div>
+							</div>
+							<div class="timepoint">
+								<div class="cursus-date">
+									<p>2019</p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="timeline-pic">
+								<img src="img/dentist.png" alt="Icône de femme dentiste">
+							</div>
+						</li>
+						<li class="cursus-step even">
+							<div class="content">
+								<p class="cursus-header">Faculté d'odontologie de Lyon</p>
+								<p>Doctorat en sciences odontologiques</p>
+							</div>
+							<div class="point-div">
+								<div class="point"></div>
+							</div>
+							<div class="timepoint">
+								<div class="cursus-date">
+									<p>2010-2016</p>
+								</div>
+							</div>
+						</li>
+						<li class="cursus-step odd">
+							<div class="content">
+								<p class="cursus-header">Baccalauréat Scientifique à Dijon</p>
+								<p>Mention Bien</p>
+							</div>
+							<div class="point-div">
+								<div class="point"></div>
+							</div>
+							<div class="timepoint">
+								<div class="cursus-date">
+									<p>2009</p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="timeline-pic">
+								<img src="img/younggirl.png" alt="Icône de jeune fille">
+							</div>
+						</li>
+					</ul>
 				</div>
-			</div>	
-			
-
-<!-- Pied de page -->
-
-			<footer>
-				<div class="text-muted my-5">© Bootstrap, et The Surfing Project</div>
-			</footer>
-		</div>
-
+			</article>
+			<hr>
+			<article id="professionnal-experience">
+				<h3>Parcours professionnel</h3>
+        <div class="professional-header">
+          <img src="img/audio-device.png" alt="Ordinateur avec notes de musique">
+          <p>Stage de fin de formation au sein du laboratoire Greyc (Caen)</p>
+          <img src="img/audio-device.png" alt="Ordinateur avec notes de musique">
+        </div>
+        <p class="professional-date">2021</p>
+        <ul>
+          <li>Réalisation d'une application de blind-test musical en Php et Symfony</li>
+          <li>Découverte du framework Vue.js</li>
+          <li>Mise en place de concepts d'architecture en API REST</li>
+          <li>Recherche sur la sécurité dans le web (attaque XSS, injection SQL, attaque CSRF)</li>
+        </ul>
+				<div class="professional-header">
+					<img src="img/tooth.png" alt="Dent mignonne">
+					<p>Chirurgien-Dentiste</p>
+					<img src="img/tooth.png" alt="Dent mignonne">
+				</div>
+				<p class="professional-date">2016-2019</p>
+        <ul>
+          <li>Prise en charge des patients (mise en place de plans de traitement, soins)</li>
+          <li>Tâches administratives (comptabilité, courrier)</li>
+          <li>Asepsie du cabinet</li>
+        </ul>
+			</article>
+			<hr>
+      <article id="project">
+        <h3>Projets</h3>
+        <p>Au cours de ma reconversion, j'ai été amenée à réaliser plusieurs projets, me faisant utiliser divers langages et frameworks. Voici les liens vers les repo Github :</p>
+        <ul>
+          <li>Projet en HTML, CSS et Bootstrap : <a href="https://github.com/Heroponne/BootstrapProject" target="_blank">Par ici !</a></li>
+          <li>Client du projet de blind-test, en HTML, CSS, Javascript et Vue.js : <a href="https://github.com/Heroponne/blinteyc_client" target="_blank">Par là !</a></li>
+          <li>API du blind-test, en Php et Symfony : <a href="https://github.com/Heroponne/blinteyc_api">Par ici !</a></li>
+          <li>Application web permettant à des étudiants en psychologie de trouver plus facilement un stage, en HTML, CSS, Ruby et Ruby on Rails : <a href="https://go-in-stage.herokuapp.com/">Le site !</a></li>
+        </ul>
+      </article>
+      <hr>
+      <article id="skills">
+        <h3>Niveau dans les langages de programmation</h3>
+        <div class="canvas-div">
+          <canvas id="skillsChart" width="400" height="400"></canvas>
+        </div>
+      </article>
+      <hr>
 		</section>
-
+	<footer>
+		<div>Icons made by <a href="https://www.flaticon.com/authors/darius-dan" title="Darius Dan">Darius Dan</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+		<div>Icons made by <a href="" title="Kiranshastry">Kiranshastry</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+    <div>Icons made by <a href="https://www.flaticon.com/authors/flat-icons" title="Flat Icons">Flat Icons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+		<div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+	</footer>
 	</body>
 </html>
