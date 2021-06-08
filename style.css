@@ -113,6 +113,12 @@ figure {
 	text-align: left;
 }
 
+/* about me */
+
+#aboutMe {
+	text-align: left;
+}
+
 footer {
 	margin-top: 60px;
 }
