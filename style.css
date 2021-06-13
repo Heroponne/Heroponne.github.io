@@ -227,10 +227,11 @@ footer {
 
 	img.profile-pic {
 		max-width: 335px;
+		max-height: 335px;
 	}
 
 	#profilePic {
-		height: 50%;
+		height: 40%;
 	}
 
 	article {
